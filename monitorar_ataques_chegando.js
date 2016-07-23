@@ -1,13 +1,8 @@
 console.log('loaded');
 
-
-
-// $('#incomings_form').submit();
-
-
 window.addEventListener( 'load', function() {
-    console.log('wow');
     document.querySelector( '#select_all' ).click();
+    document.querySelector( '#incomings_form' ).submit();
 });
 
 
