@@ -1,10 +1,6 @@
 console.log('loaded');
 
-var selectAll = document.querySelector( '#select_all' );
-
-console.log( selectAll );
-
-selectAll.click();
+// document.querySelector( '#select_all' ).click();
 
 // $('#incomings_form').submit();
 
