@@ -1,9 +1,14 @@
 console.log('loaded');
 
-// document.querySelector( '#select_all' ).click();
+
 
 // $('#incomings_form').submit();
 
+
+window.addEventListener( 'load', function() {
+    console.log('wow');
+    document.querySelector( '#select_all' ).click();
+});
 
 
 var numAttackElement = document.querySelector( '#incomings_amount' );
