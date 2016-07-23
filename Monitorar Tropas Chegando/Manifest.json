@@ -1,0 +1,22 @@
+{
+    "name": "Monitorar Tropas Chegando",
+    "description": "Monitora e renomeia novas tropas",
+    "version": "0.2",
+    "permissions": [
+        "tabs","<all_urls>"
+    ],
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": [
+                "https://br76.tribalwars.com.br/game.php?village=50747&screen=overview_villages&mode=incomings"
+            ],
+            "js": ["content.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "manifest_version":2
+}
