@@ -1,6 +1,12 @@
-document.querySelector( '#select_all' ).click();
+console.log('loaded');
 
-$('#incomings_form').submit();
+var selectAll = document.querySelector( '#select_all' );
+
+console.log( selectAll );
+
+selectAll.click();
+
+// $('#incomings_form').submit();
 
 
 
