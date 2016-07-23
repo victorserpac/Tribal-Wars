@@ -1,9 +1,8 @@
 console.log('loaded');
 
 window.addEventListener( 'load', function() {
-    console.log('foo');
-    // document.querySelector( '#select_all' ).click();
-    // document.querySelector( '#incomings_form' ).submit();
+    document.querySelector( '#select_all' ).click();
+    document.querySelector('#incomings_table input[type=submit]').click();
 });
 
 
