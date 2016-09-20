@@ -12,9 +12,17 @@
     "content_scripts": [
         {
             "matches": [
-                "https://br76.tribalwars.com.br/game.php?village=50747&screen=overview_villages&mode=incomings"
+                "https://br76.tribalwars.com.br/game.php?village=*&screen=overview_villages&mode=incomings",
+                "https://br76.tribalwars.com.br/game.php?screen=overview_villages&mode=incomings"
             ],
-            "js": ["content.js"],
+            "js": ["rename.js"],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "https://br76.tribalwars.com.br/game.php?village=*&screen=overview_villages&mode=incomings&action=process&type=unignored&subtype=all&h=*"
+            ],
+            "js": ["watch.js"],
             "run_at": "document_end"
         }
     ],

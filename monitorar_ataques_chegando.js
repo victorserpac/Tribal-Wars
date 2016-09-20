@@ -6,8 +6,8 @@ window.addEventListener( 'load', function() {
 });
 
 
-var numAttackElement = document.querySelector( '#incomings_amount' );
+var numAttackElement = ;
 
-numAttackElement.addEventListener( 'DOMSubtreeModified', function( event ) {
-    location.reload();
+document.querySelector( '#incomings_amount' ).addEventListener( 'DOMSubtreeModified', function( event ) {
+    location = "https://br76.tribalwars.com.br/game.php?screen=overview_villages&mode=incomings";
 });
